@@ -9,10 +9,10 @@ class Twitter:
     def __init__(self, cfg=None):
         if cfg is None:
             cfg = {
-                "consumer_key": "UDKklpVFJbjnrIeBbwyrwXw9F",
-                "consumer_secret": "02aJXtk4OnxwTBLQ3h5ZsmHCj4N6BllC5qn8yQwAOlfc1PBHP4",
-                "access_token": "804265252221308928-vQhGbdrjvt3mqNZD2X8GaZ5U4f1jIZZ",
-                "access_token_secret": "MjNpV4fVRhV5Ag1nByRNhw9H4j5TXAys5REV7KwyzcsIl"
+                "consumer_key": "...",
+                "consumer_secret": "...",
+                "access_token": "...",
+                "access_token_secret": "..."
             }
         else:
             cfg = {
