@@ -57,13 +57,16 @@ class Twitter:
                     continue
                 except StopIteration:
                     break
-            plt.clf()
-            pos = nx.spring_layout(graph)
-            nx.draw_networkx_nodes(graph, pos)
-            nx.draw_networkx_edges(graph, pos)
-            plt.draw()
-            plt.pause(0.5)
+            self.draw_graph(graph)
         return graph
+
+    def draw_graph(self, graph):
+        plt.clf()
+        pos = nx.spring_layout(graph)
+        nx.draw_networkx_nodes(graph, pos)
+        nx.draw_networkx_edges(graph, pos)
+        plt.draw()
+        plt.pause(0.5)
 
 
 def main():
